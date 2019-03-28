@@ -9,8 +9,8 @@
   </head>
   <body>
     <header>
-      <h1>Millions Guesser</h1>
-      <p>Will you be a millionaire? Enter your name below, then play the game to find out your predicted net worth in 10 years!</p>
+      <h1 class="title">Millions Guesser</h1>
+      <p class="title-p">Will you be a millionaire? Enter your name below, then play the game to find out your predicted net worth in 10 years!</p>
     </header>
     <main>
       <form>
@@ -22,24 +22,25 @@
                 class='last-name'
                 name='last-name'
         >
-        <button>Enter</button>
-        <button>Restart</button>
+        <button class="enter-btn btn">Enter</button>
+        <button class="restart-btn btn">Restart</button>
       </form>
-      <section>
-        <p>Time to start guessing!</p>
-        <p>Enter your guess below</p>
-        <div>
+      <section class="guess-section">
+        <p class="start-guess-p">Time to start guessing!</p>
+        <p class="enter-p">Enter your guess below</p>
+        <div class="input-div">
+          <p class="worth-p">I'll be worth</p>
           <input  type="number"
                   class='guess-input'
                   name='guess-input'
           >
+          <p class="million-p">million dollars</p>
         </div>
+        <p class="high feedback">Keep dreaming, that's too high. Guess again</p>
+        <p class="low feedback">Good news, that's too low! Guess again</p>
+        <p class="correct feedback">That's correct! Now go earn your millions!</p>
       </section>
     </main>
-
-
-
-
 
     <script src="script.js"></script>
   </body>
