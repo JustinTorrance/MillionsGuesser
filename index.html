@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Millions Guesser</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
@@ -13,7 +13,7 @@
       <p class="title-p">Will you be a millionaire? Enter your name below, then play the game to find out your predicted net worth in 10 years!</p>
     </header>
     <main>
-      <form>
+      <form class="name-form">
         <input  type="text"
                 class='first-name'
                 name='first-name'
@@ -28,17 +28,16 @@
       <section class="guess-section">
         <p class="start-guess-p">Time to start guessing!</p>
         <p class="enter-p">Enter your guess below</p>
-        <div class="input-div">
+        <form class="guess-form">
           <p class="worth-p">I'll be worth</p>
           <input  type="number"
                   class='guess-input'
                   name='guess-input'
           >
           <p class="million-p">million dollars</p>
-        </div>
-        <p class="high feedback">Keep dreaming, that's too high. Guess again</p>
-        <p class="low feedback">Good news, that's too low! Guess again</p>
-        <p class="correct feedback">That's correct! Now go earn your millions!</p>
+          <button class="guess-btn btn">Enter</button>
+        </form>
+        <p class="feedback"></p>
       </section>
     </main>
 
